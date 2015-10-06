@@ -1,0 +1,66 @@
+/* CSS declarations go here */
+body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.center{
+	position: relative;
+	margin: auto;
+	padding: 10px;
+	width: 60%;
+	background-color: #68DD68;
+	border: 18px solid white;
+	border-top-color: #55BB55;
+	border-bottom-color: #55BB55;
+	border-left-color: #55CC55;
+	border-right-color: #66AA66;
+}
+
+input{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	color: black;
+	width: 25%
+}
+
+.align{
+	margin: auto;
+}
+
+#detalle{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	color: black;
+	width: 25%
+}
+
+#botonSubmit{
+	margin-top: 10%;
+	width: 10%;
+	height: 20px;
+}
+
+body{
+	background-color: #000000;
+}
+
+h1, h3{
+	text-align: center;
+	color: white;
+	font-family: "Helvetica"
+}
+
+p{
+	margin: 5%;
+	font-family: "Helvetica";
+	text-align: center;
+	color: white;
+}
+
+.pago:hover{
+	font-size: 110%;
+}

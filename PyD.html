@@ -1,0 +1,36 @@
+<head>
+  <title>P&D</title>
+</head>
+
+<body>
+  {{>agregarPagos}}
+  {{>listarPagos}}
+</body>
+
+<template name="agregarPagos">
+  <section id="section1">
+    <div class="center">
+      <h1><i>P&D</i></h1>
+      <p><i>Pagos y Detalles</i></p>
+      <form>
+        <h3>Apodo</h3>
+        <input type="text" name="apodo">
+        <h3>Detalle</h3>
+        <textarea type="text" name="detalle" id="detalle"> </textarea>
+        <h3>Cantidad</h3>
+        <input type="number" name="cantidad">
+        <input type="submit" name="botonAgregarPagos" id="botonSubmit">
+      </form>
+    </div>
+  </section>
+    
+</template>
+
+<template name="listarPagos">
+  <section id="section2">
+    <h1>Lista de Pagos</h1>
+    {{#each pagos}}
+      <p class="pago" autofocus> {{apodo}} {{cantidad}} {{detalle}} {{fechaHora}} </p>
+    {{/each}}
+  </section>
+</template>
